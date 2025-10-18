@@ -14,6 +14,10 @@ data:
       repos:
       - lfs268-eeganlf/golang-import
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - lfs268-eeganlf/node-lab
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -35,6 +39,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       lfs268-eeganlf/jx3-gke-gsm:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      lfs268-eeganlf/node-lab:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -86,6 +95,20 @@ data:
       - cat
       - dog
       - pony
+      lfs268-eeganlf/node-lab:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -103,6 +126,9 @@ data:
       trusted_org: lfs268-eeganlf
     - repos:
       - lfs268-eeganlf/golang-import
+      trusted_org: lfs268-eeganlf
+    - repos:
+      - lfs268-eeganlf/node-lab
       trusted_org: lfs268-eeganlf
     welcome:
     - message_template: Welcome
