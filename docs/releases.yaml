@@ -10,7 +10,7 @@
     firstDeployed: "2025-10-17T08:20:57Z"
     home: https://github.com/jenkins-x-plugins/jx-verify
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2025-10-18T02:45:08Z"
+    lastDeployed: "2025-10-18T03:18:41Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=ci-cd-349400&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Flfs268-lab%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
     name: jx-verify
     releaseName: jx-verify
@@ -30,7 +30,7 @@
     firstDeployed: "2025-10-17T08:20:57Z"
     home: https://github.com/jenkins-x-plugins/jx-verify
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2025-10-18T02:45:08Z"
+    lastDeployed: "2025-10-18T03:18:41Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=ci-cd-349400&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Flfs268-lab%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
     name: jx-verify
     releaseName: jx-verify
