@@ -1,0 +1,11 @@
+# Source: golab/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: golab-golab
+  annotations:
+    meta.helm.sh/release-name: 'golab'
+    meta.helm.sh/release-namespace: 'jx-staging'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

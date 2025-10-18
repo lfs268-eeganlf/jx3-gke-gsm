@@ -18,3 +18,5 @@ releases:
 - chart: dev/golab
   version: 0.0.1
   name: golab
+  values:
+  - jx-values.yaml
