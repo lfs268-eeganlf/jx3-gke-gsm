@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: golab
+    - name: golang-import
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
