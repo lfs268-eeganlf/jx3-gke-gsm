@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         lfs268-eeganlf/golab: true
+        lfs268-eeganlf/golang-import: true
         lfs268-eeganlf/jx3-gke-gsm: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         lfs268-eeganlf/golab: merge
+        lfs268-eeganlf/golang-import: merge
         lfs268-eeganlf/jx3-gke-gsm: merge
       queries:
       - labels:
@@ -34,6 +36,7 @@ data:
         repos:
         - lfs268-eeganlf/jx3-gke-gsm
         - lfs268-eeganlf/golab
+        - lfs268-eeganlf/golang-import
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - lfs268-eeganlf/jx3-gke-gsm
         - lfs268-eeganlf/golab
+        - lfs268-eeganlf/golang-import
       target_url: http://lighthouse-jx.136.114.174.212.nip.io/merge/status
 kind: ConfigMap
 metadata:
