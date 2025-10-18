@@ -10,6 +10,7 @@ data:
         lfs268-eeganlf/golab: true
         lfs268-eeganlf/golang-import: true
         lfs268-eeganlf/jx3-gke-gsm: true
+        lfs268-eeganlf/node-lab: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -24,6 +25,7 @@ data:
         lfs268-eeganlf/golab: merge
         lfs268-eeganlf/golang-import: merge
         lfs268-eeganlf/jx3-gke-gsm: merge
+        lfs268-eeganlf/node-lab: merge
       queries:
       - labels:
         - approved
@@ -37,6 +39,7 @@ data:
         - lfs268-eeganlf/jx3-gke-gsm
         - lfs268-eeganlf/golab
         - lfs268-eeganlf/golang-import
+        - lfs268-eeganlf/node-lab
       - labels:
         - updatebot
         missingLabels:
@@ -49,6 +52,7 @@ data:
         - lfs268-eeganlf/jx3-gke-gsm
         - lfs268-eeganlf/golab
         - lfs268-eeganlf/golang-import
+        - lfs268-eeganlf/node-lab
       target_url: http://lighthouse-jx.136.114.174.212.nip.io/merge/status
 kind: ConfigMap
 metadata:
