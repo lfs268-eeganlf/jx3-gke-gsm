@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: golab
     - name: golang-import
+    - name: node-lab
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
