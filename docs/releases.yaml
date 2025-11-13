@@ -10,7 +10,7 @@
     firstDeployed: "2025-11-13T18:36:34Z"
     home: https://github.com/jenkins-x-plugins/jx-verify
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2025-11-13T19:00:04Z"
+    lastDeployed: "2025-11-13T20:29:49Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=ci-cd-349400&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Flfs268-lab%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
     name: jx-verify
     releaseName: jx-verify
@@ -30,7 +30,7 @@
     firstDeployed: "2025-11-13T18:36:34Z"
     home: https://github.com/jenkins-x-plugins/jx-verify
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2025-11-13T19:00:04Z"
+    lastDeployed: "2025-11-13T20:29:49Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=ci-cd-349400&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Flfs268-lab%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
     name: jx-verify
     releaseName: jx-verify
@@ -41,7 +41,7 @@
     - https://github.com/jenkins-x-plugins/jx-verify.git
     version: 0.3.17
   - apiVersion: v1
-    appVersion: 0.0.1
+    appVersion: 0.0.2
     applicationUrl: http://lfs268-pipeline-lab-jx-staging.34.68.233.33.nip.io
     description: A Helm chart for Kubernetes
     firstDeployed: "2025-11-13T19:00:04Z"
@@ -49,7 +49,7 @@
     ingresses:
     - name: lfs268-pipeline-lab
       url: http://lfs268-pipeline-lab-jx-staging.34.68.233.33.nip.io
-    lastDeployed: "2025-11-13T19:00:04Z"
+    lastDeployed: "2025-11-13T20:29:49Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=ci-cd-349400&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Flfs268-lab%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Flfs268-pipeline-lab&dateRangeUnbound=both
     name: lfs268-pipeline-lab
     releaseName: lfs268-pipeline-lab
@@ -58,7 +58,7 @@
     resourcePath: config-root/namespaces/jx-staging/lfs268-pipeline-lab
     sources:
     - https://github.com/lfs268-eeganlf/lfs268-pipeline-lab.git
-    version: 0.0.1
+    version: 0.0.2
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
