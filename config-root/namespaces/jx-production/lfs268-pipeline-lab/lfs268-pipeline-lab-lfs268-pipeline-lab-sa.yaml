@@ -1,0 +1,11 @@
+# Source: lfs268-pipeline-lab/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: lfs268-pipeline-lab-lfs268-pipeline-lab
+  annotations:
+    meta.helm.sh/release-name: 'lfs268-pipeline-lab'
+    meta.helm.sh/release-namespace: 'jx-production'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
