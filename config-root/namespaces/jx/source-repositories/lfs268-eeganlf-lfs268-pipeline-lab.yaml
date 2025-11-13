@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: lfs268-eeganlf
+    provider: github
+    repository: lfs268-pipeline-lab
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: lfs268-eeganlf-lfs268-pipeline-lab
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/lfs268-eeganlf/lfs268-pipeline-lab.git
+  org: lfs268-eeganlf
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: lfs268-pipeline-lab
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/lfs268-eeganlf/lfs268-pipeline-lab
