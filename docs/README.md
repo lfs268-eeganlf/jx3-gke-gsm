@@ -33,6 +33,13 @@
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-verify.git'>source</a></td>
 	    </tr>
     <tr>
+	      <td>lfs268-pipeline-lab</td>
+	      <td title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> lfs268-pipeline-lab</td>
+	      <td>0.0.1</td>
+	      <td><a href='http://lfs268-pipeline-lab-jx-staging.34.68.233.33.nip.io'>view</a></td>
+	      <td><a href='https://github.com/lfs268-eeganlf/lfs268-pipeline-lab.git'>source</a></td>
+	    </tr>
+    <tr>
 		      <td colspan='5'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
