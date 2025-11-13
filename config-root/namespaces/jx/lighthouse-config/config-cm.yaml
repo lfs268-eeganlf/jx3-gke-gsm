@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - lfs268-eeganlf/jx3-gke-gsm
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.34.68.233.33.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
