@@ -1,0 +1,21 @@
+# Source: lfs268-pipeline-lab/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: lfs268-pipeline-lab
+  labels:
+    chart: "lfs268-pipeline-lab-0.0.2"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'lfs268-pipeline-lab'
+    meta.helm.sh/release-namespace: 'jx-production'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    name: http
+  selector:
+    app: lfs268-pipeline-lab-lfs268-pipeline-lab

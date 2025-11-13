@@ -1,0 +1,23 @@
+# Source: lfs268-pipeline-lab/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'lfs268-pipeline-lab'
+    meta.helm.sh/release-namespace: 'jx-production'
+  name: lfs268-pipeline-lab
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: lfs268-pipeline-lab
+            port:
+              number: 80
+    host: "lfs268-pipeline-lab-jx-production.34.68.233.33.nip.io"
