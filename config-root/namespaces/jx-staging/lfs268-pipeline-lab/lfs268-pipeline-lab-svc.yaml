@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: lfs268-pipeline-lab
   labels:
-    chart: "lfs268-pipeline-lab-0.0.1"
+    chart: "lfs268-pipeline-lab-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'lfs268-pipeline-lab'
