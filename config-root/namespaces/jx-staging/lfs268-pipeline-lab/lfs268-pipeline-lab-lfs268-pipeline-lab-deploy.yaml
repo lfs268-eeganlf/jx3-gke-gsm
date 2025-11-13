@@ -1,0 +1,61 @@
+# Source: lfs268-pipeline-lab/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lfs268-pipeline-lab-lfs268-pipeline-lab
+  labels:
+    draft: draft-app
+    chart: "lfs268-pipeline-lab-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'lfs268-pipeline-lab'
+    meta.helm.sh/release-namespace: 'jx-staging'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-staging
+spec:
+  selector:
+    matchLabels:
+      app: lfs268-pipeline-lab-lfs268-pipeline-lab
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: lfs268-pipeline-lab-lfs268-pipeline-lab
+    spec:
+      serviceAccountName: lfs268-pipeline-lab-lfs268-pipeline-lab
+      containers:
+      - name: lfs268-pipeline-lab
+        image: "us-central1-docker.pkg.dev/ci-cd-349400/oci/lfs268-pipeline-lab:0.0.1"
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: VERSION
+          value: 0.0.1
+        envFrom: null
+        ports:
+        - name: http
+          containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources:
+          limits:
+            cpu: 400m
+            memory: 256Mi
+          requests:
+            cpu: 200m
+            memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:

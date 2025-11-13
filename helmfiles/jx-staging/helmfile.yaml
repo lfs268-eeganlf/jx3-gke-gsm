@@ -18,3 +18,5 @@ releases:
 - chart: dev/lfs268-pipeline-lab
   version: 0.0.1
   name: lfs268-pipeline-lab
+  values:
+  - jx-values.yaml
