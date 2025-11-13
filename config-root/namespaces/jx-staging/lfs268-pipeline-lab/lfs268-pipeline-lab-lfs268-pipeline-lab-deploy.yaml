@@ -5,7 +5,7 @@ metadata:
   name: lfs268-pipeline-lab-lfs268-pipeline-lab
   labels:
     draft: draft-app
-    chart: "lfs268-pipeline-lab-0.0.1"
+    chart: "lfs268-pipeline-lab-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'lfs268-pipeline-lab'
@@ -26,11 +26,11 @@ spec:
       serviceAccountName: lfs268-pipeline-lab-lfs268-pipeline-lab
       containers:
       - name: lfs268-pipeline-lab
-        image: "us-central1-docker.pkg.dev/ci-cd-349400/oci/lfs268-pipeline-lab:0.0.1"
+        image: "us-central1-docker.pkg.dev/ci-cd-349400/oci/lfs268-pipeline-lab:0.0.2"
         imagePullPolicy: IfNotPresent
         env:
         - name: VERSION
-          value: 0.0.1
+          value: 0.0.2
         envFrom: null
         ports:
         - name: http
