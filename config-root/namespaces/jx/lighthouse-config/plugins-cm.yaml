@@ -6,6 +6,10 @@ data:
       repos:
       - lfs268-eeganlf/jx3-gke-gsm
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - lfs268-eeganlf/lfs268-pipeline-lab
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,12 +25,31 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      lfs268-eeganlf/lfs268-pipeline-lab:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     label:
       additional_labels: null
     owners: {}
     plugins:
       lfs268-eeganlf/jx3-gke-gsm:
       - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      lfs268-eeganlf/lfs268-pipeline-lab:
       - approve
       - assign
       - help
@@ -52,6 +75,11 @@ data:
     - repos:
       - lfs268-eeganlf/jx3-gke-gsm
       trusted_org: lfs268-eeganlf
+    - repos:
+      - lfs268-eeganlf/lfs268-pipeline-lab
+      trusted_org: lfs268-eeganlf
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

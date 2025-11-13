@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         lfs268-eeganlf/jx3-gke-gsm: true
+        lfs268-eeganlf/lfs268-pipeline-lab: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         lfs268-eeganlf/jx3-gke-gsm: merge
+        lfs268-eeganlf/lfs268-pipeline-lab: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - lfs268-eeganlf/jx3-gke-gsm
+        - lfs268-eeganlf/lfs268-pipeline-lab
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - lfs268-eeganlf/jx3-gke-gsm
+        - lfs268-eeganlf/lfs268-pipeline-lab
       target_url: http://lighthouse-jx.34.68.233.33.nip.io/merge/status
 kind: ConfigMap
 metadata:
