@@ -3,12 +3,20 @@ environments:
     values:
     - jx-values.yaml
 ---
+namespace: jx-staging
 repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+- name: dev
+  url: http://chartmuseum-jx.34.68.233.33.nip.io
 releases:
 - chart: jxgh/jx-verify
   name: jx-verify
   namespace: jx-staging
+  values:
+  - jx-values.yaml
+- chart: dev/lfs268-pipeline-lab
+  version: 0.0.1
+  name: lfs268-pipeline-lab
   values:
   - jx-values.yaml
